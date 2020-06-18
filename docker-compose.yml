@@ -3,7 +3,8 @@ version: '3'
 services:
   crontab-ui:
     build: .
-    image: alseambusher/crontab-ui
+    image: cronimage
+    container_name: crontab-ui
     network_mode: bridge
     ports:
       - 8000:8000
